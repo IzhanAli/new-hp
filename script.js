@@ -99,7 +99,7 @@ const generatePDF = async (name) => {
       return res.arrayBuffer()
   });
 
-  const exFont = await fetch("./Poppins-Medium.ttf").then(res => { 
+  const exFont = await fetch("./fonts/poppins/Poppins-Medium.ttf").then(res => { 
       return res.arrayBuffer() 
   });
   const pdfDoc = await PDFDocument.load(exBytes);
